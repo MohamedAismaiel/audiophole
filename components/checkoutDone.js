@@ -1,10 +1,9 @@
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import Image from "next/image";
-import { Fragment, useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../context/cartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react/cjs/react.development";
 const DoneOverlay = (props) => {
   const router = useRouter();
   const clearCart = useContext(CartContext).removeAll;

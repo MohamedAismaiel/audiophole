@@ -1,4 +1,4 @@
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import { Fragment, useContext } from "react";
 import { CartContext } from "../context/cartContext";

@@ -1,4 +1,3 @@
-import { useEffect } from "react/cjs/react.development";
 import HomeBodySection from "./bodySection";
 
 const NavHamList = (props) => {

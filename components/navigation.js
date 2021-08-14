@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useRouter } from "next/dist/client/router";
-import { useContext } from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from "next/router";
 import { CartContext } from "../context/cartContext";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState, useContext } from "react";
 const Navigation = (props) => {
   const router = useRouter();
 

@@ -1,6 +1,5 @@
-import { useRouter } from "next/dist/client/router";
-import { Fragment, useContext } from "react";
-import { useRef, useState } from "react/cjs/react.development";
+import { useRouter } from "next/router";
+import { Fragment, useContext, useState } from "react";
 import Image from "next/image";
 import { CartContext } from "../context/cartContext";
 import DoneOverlay from "./checkoutDone";

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
 function useWindowResize() {

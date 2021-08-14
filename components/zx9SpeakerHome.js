@@ -1,4 +1,4 @@
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import Image from "next/image";
 const Zx9SpeakerHome = () => {
   const router = useRouter();

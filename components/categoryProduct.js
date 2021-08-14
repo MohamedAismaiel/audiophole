@@ -1,4 +1,4 @@
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import { Fragment } from "react";
 import HomeBodySection from "./bodySection";
 import CategoryTitle from "./categoryTitle";

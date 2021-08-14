@@ -1,5 +1,4 @@
-import React, { useReducer, useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import React, { useEffect, useReducer } from "react";
 
 export const CartContext = React.createContext({
   totalPrice: 0,
