@@ -1,0 +1,12 @@
+.EarphonesCategoryBody {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 16rem;
+  .product-image-one {
+    background-image: url("../assets/shared/desktop/image-earphones.png");
+    background-position: bottom;
+    background-size: contain;
+    transform: translateY(5rem);
+  }
+}

@@ -1,0 +1,69 @@
+.zx9OrangeBoxContainer {
+  display: flex;
+  justify-content: center;
+  height: min-content;
+  margin-bottom: 5rem;
+  margin-top: 16rem;
+}
+.zx9OrangeBox {
+  position: relative;
+  overflow: hidden;
+  width: 111rem;
+  height: 56rem;
+  background-color: var(--dark-orange);
+  display: flex;
+  align-items: flex-end;
+  column-gap: 15rem;
+  border-radius: 1rem;
+  .circle-icon {
+    position: absolute;
+    bottom: -40rem;
+    left: -16.8rem;
+    background-image: url(../assets/home/desktop/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 99.5rem;
+    width: 99.5rem;
+    opacity: 1;
+  }
+  &-speakerPhoto {
+    // background-image: url(../assets/home/desktop/image-speaker-zx9.png);
+    width: 38rem;
+    height: 45rem;
+
+    margin-left: 14.1rem;
+    z-index: 1;
+  }
+  &-textbox {
+    position: relative;
+    width: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    &-maintext {
+      font-size: 5.6rem;
+      letter-spacing: 0.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--white);
+    }
+    &-paragraph {
+      color: var(--white);
+      opacity: 0.75;
+      font-size: 1.5rem;
+      opacity: 0.75;
+      letter-spacing: 0.1rem;
+    }
+  }
+  &-button {
+    background-color: var(--black);
+    color: var(--white);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: var(--lighter-black) !important;
+      }
+    }
+  }
+}

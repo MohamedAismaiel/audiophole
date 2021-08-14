@@ -1,0 +1,86 @@
+.navbar {
+  width: 100vw;
+  background-color: var(--light-black);
+  color: white;
+  // padding: 0 40.5rem;
+  display: flex;
+  justify-content: center;
+  z-index: 50;
+  position: relative;
+
+  &-container {
+    padding: 3rem 0;
+    width: 110rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  }
+  &-logo {
+    a {
+      text-decoration: none;
+      color: white;
+      margin: 0 1rem 0 0;
+      font-size: 2.7rem;
+      font-weight: 700;
+    }
+    margin-right: auto;
+  }
+  &-navList {
+    font-size: 1.3rem;
+    li {
+      list-style: none;
+      outline: none;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      margin: 0 3.6rem;
+      transition: all 0.2s;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      a:hover {
+        color: var(--light-orange);
+      }
+    }
+
+    display: flex;
+  }
+  &-cart {
+    background-image: url("https://res.cloudinary.com/audiophile/image/upload/v1627483732/assets/shared/desktop/icon-cart_jbmith.svg");
+    width: 2.3rem;
+    height: 2.3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: auto;
+
+    .icon {
+      width: 2.3rem;
+    }
+  }
+}
+.bump {
+  animation: bump 400ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.8);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.cart-div {
+  margin-left: auto;
+}

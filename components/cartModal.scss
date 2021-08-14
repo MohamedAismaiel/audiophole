@@ -1,0 +1,102 @@
+.toclosemodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.cartOuter {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.cart-box {
+  position: relative;
+  z-index: 20;
+  width: 37.7rem;
+  height: min-content;
+  background-color: var(--white);
+  border-radius: 1rem;
+  margin-top: 13rem;
+  padding: 3rem;
+  @media only screen and (max-width: 500px) {
+    .checkout-button {
+      font-size: 2.5rem;
+      height: 7rem;
+    }
+  }
+  .checkout-box-2-summary {
+    &-image {
+      position: relative;
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    .checkout-box-2-summary {
+      &-total {
+        &-title {
+          font-size: 3rem;
+        }
+        &-price {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  &-titlebox {
+    // margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    &-title {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      font-weight: 400;
+      @media only screen and (max-width: 500px) {
+        font-size: 3rem;
+      }
+    }
+    &-button {
+      cursor: pointer;
+      margin: 0;
+      margin-left: auto;
+      font-size: 1.5rem;
+      border-bottom: 1px solid black;
+      font-weight: 500;
+      transition: all 0.2s;
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          color: var(--dark-orange);
+          border-color: var(--dark-orange);
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+.just-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.button-box-checkout {
+  margin-left: auto;
+  width: 12rem !important;
+}
+.mrr-0 {
+  margin-right: 0 !important;
+}

@@ -1,0 +1,12 @@
+.SpeakersCategoryBody {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 16rem;
+  .product-image-one {
+    background-image: url("../assets/shared/desktop/image-zx9-speaker.jpg");
+  }
+  .product-image-two {
+    background-image: url("../assets/shared/desktop/image-zx7-speaker.jpg");
+  }
+}

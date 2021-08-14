@@ -1,0 +1,197 @@
+.footer {
+  // margin-top: 16rem;
+  width: 100vw;
+  height: min-content;
+  background-color: var(--light-black);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7.5rem;
+}
+.footerBox {
+  display: flex;
+  margin-top: 7.5rem;
+
+  &-leftside {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    &-logo {
+      font-size: 2.7rem;
+      font-weight: 700;
+      margin-bottom: 4rem;
+      span {
+        border-top: 4px solid var(--dark-orange);
+        padding-top: 7.1rem;
+      }
+    }
+    &-text {
+      padding-right: 6rem;
+      font-size: 1.5rem;
+      color: var(--white);
+      opacity: 0.5;
+      margin-bottom: 7rem;
+    }
+    &-copyright {
+      span {
+        font-size: 1.5rem;
+        color: var(--white);
+        opacity: 0.5;
+      }
+      a {
+        text-decoration: none;
+        color: var(--dark-orange);
+      }
+    }
+  }
+  &-rightside {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 1.6rem;
+    &-list {
+      font-size: 1.3rem;
+      padding-top: 1rem;
+      li {
+        list-style: none;
+        outline: none;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        // margin: 0 2rem;
+        transition: all 0.2s;
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            color: var(--light-orange);
+          }
+        }
+      }
+      display: flex;
+      justify-content: space-between;
+    }
+    &-social {
+      display: flex;
+      justify-content: flex-end;
+      //   margin-top: 11.7rem;
+      align-items: flex-end;
+      height: 100%;
+      &-facebook,
+      &-twitter,
+      &-instagram {
+        cursor: pointer;
+        width: 2.2rem;
+        height: 2.2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      &-facebook {
+        background-image: url("../assets/shared/desktop/icon-facebook.svg");
+        margin-right: 3rem;
+      }
+      &-twitter {
+        margin-right: 3rem;
+        background-image: url("../assets/shared/desktop/icon-twitter.svg");
+      }
+      &-instagram {
+        background-image: url("../assets/shared/desktop/icon-instagram.svg");
+      }
+    }
+  }
+}
+.footerBox500PX {
+  display: flex;
+  margin-top: 7.5rem;
+  height: 80vh;
+  margin-bottom: 7.5rem;
+  flex-direction: column;
+  align-items: center;
+  &-logo {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 8rem;
+    span {
+      border-top: 4px solid var(--dark-orange);
+      padding-top: 7.1rem;
+    }
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    &-items {
+      li {
+        text-align: center;
+        font-size: 2.4rem;
+        list-style: none;
+        outline: none;
+        margin-bottom: 4rem;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        // margin: 0 2rem;
+        transition: all 0.2s;
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            color: var(--light-orange);
+          }
+        }
+      }
+    }
+  }
+  &-text {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--white);
+    opacity: 0.5;
+    margin-bottom: 8rem;
+    line-height: 4rem;
+    margin-top: 4rem;
+    letter-spacing: 1px;
+  }
+  &-copyright {
+    text-align: center;
+    line-height: 4rem;
+    margin-bottom: 4rem;
+    span {
+      font-size: 2.5rem;
+      color: var(--white);
+      opacity: 0.5;
+    }
+    a {
+      font-size: 2.5rem;
+      text-decoration: none;
+      color: var(--dark-orange);
+    }
+  }
+  &-social {
+    display: flex;
+    justify-content: flex-end;
+    //   margin-top: 11.7rem;
+
+    align-items: flex-end;
+    height: 100%;
+    &-facebook,
+    &-twitter,
+    &-instagram {
+      cursor: pointer;
+      width: 2.6rem;
+      height: 2.6rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &-facebook {
+      background-image: url("../assets/shared/desktop/icon-facebook.svg");
+      margin-right: 3rem;
+    }
+    &-twitter {
+      margin-right: 3rem;
+      background-image: url("../assets/shared/desktop/icon-twitter.svg");
+    }
+    &-instagram {
+      background-image: url("../assets/shared/desktop/icon-instagram.svg");
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.alsoLike-container {
+  display: flex;
+  gap: 3.5rem;
+  overflow: hidden;
+  .alsolike-box {
+    margin-bottom: 8rem;
+    height: 48rem;
+    width: calc((100% - 3.5rem) / 3);
+    text-align: center;
+    .button {
+      margin: 0;
+    }
+  }
+  &-box {
+    position: relative;
+    background-color: var(--gray);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 31.8rem;
+    &-title {
+      margin: 4rem 0;
+      // width: 35rem;
+      height: min-content;
+      font-size: 2.4rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+  }
+}

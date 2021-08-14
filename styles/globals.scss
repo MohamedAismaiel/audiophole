@@ -1,0 +1,864 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import "../components/mainHeader.scss";
+@import "../components/navigation.scss";
+@import "../components/bodySection.scss";
+@import "../components/zx9SpeakerHome.scss";
+@import "../components/zx7Speaker.scss";
+@import "../components/yx1Earphones.scss";
+@import "../components/homeBottom.scss";
+@import "../components/footer.scss";
+@import "../components/headphonesCategoryTitle.scss";
+@import "../components/HeadphonesCategoryBody.scss";
+@import "../components/speakersCategoryBody.scss";
+@import "../components/earphonesCategoryBody.scss";
+@import "../components/xx99markIIProduct.scss";
+@import "../components/productDetailsPhotos.scss";
+@import "../components/alsoLike.scss";
+@import "../components/checkout.scss";
+@import "../components/cartModal.scss";
+@import "../components/checkoutDone.scss";
+@import "../components/navHamList.scss";
+$bp-1440px: 90em; //1440px
+$bp-1200px: 75em;
+$bp-1024px: 64em;
+$bp-950px: 59.375em;
+$bp-768px: 48em;
+$bp-650px: 40.625em;
+$bp-500px: 31.25em;
+$bp-320px: 20em;
+
+:root {
+  --dark-orange: rgb(216, 125, 74);
+  --light-orange: rgb(251, 175, 133);
+  --gray: rgb(241, 241, 241);
+  --white: rgb(255, 255, 255);
+  --dark-white: rgb(250, 250, 250);
+  --light-black: rgb(15, 15, 15);
+  --lighter-black: rgb(71, 71, 71);
+  --black: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // to make 1rem =10 px
+  overflow-x: hidden;
+  white-space: pre-line;
+  @media only screen and (max-width: $bp-1440px) {
+    font-size: 55%;
+  }
+  @media only screen and (max-width: $bp-1200px) {
+    font-size: 52%;
+  }
+  @media only screen and (max-width: $bp-1024px) {
+    font-size: 48%;
+  }
+  @media only screen and (max-width: $bp-950px) {
+    font-size: 45%;
+  }
+  @media only screen and (max-width: $bp-768px) {
+    font-size: 40%;
+  }
+  @media only screen and (max-width: $bp-650px) {
+    font-size: 35%;
+  }
+  @media only screen and (max-width: $bp-500px) {
+    font-size: 32%;
+  }
+  @media only screen {
+    transition: all 0s !important;
+
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+body {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  font-family: "Manrope", sans-serif;
+}
+img {
+  border-radius: 1rem;
+}
+
+.mainLayout {
+  width: 100vw;
+  min-height: 100vh;
+}
+.container,
+.navbar-container,
+.zx9OrangeBox {
+  width: 111rem;
+  @media only screen and (max-width: $bp-950px) {
+    width: 95rem;
+  }
+  @media only screen and (max-width: $bp-768px) {
+    width: 90rem;
+  }
+  @media only screen and (max-width: $bp-500px) {
+    width: 63.9rem;
+  }
+}
+.navbar {
+  @media only screen and (max-width: $bp-950px) {
+    position: sticky;
+    top: 0;
+  }
+}
+.button {
+  cursor: pointer;
+  font-size: 1.3rem;
+  border: none;
+  height: 4.8rem;
+  width: 17rem;
+  margin-top: 5rem;
+  border-radius: 4px;
+  letter-spacing: 0.9px;
+  font-weight: 500;
+  transition: all 0.2s;
+
+  @media only screen and (max-width: $bp-950px) {
+    font-size: 1.5rem;
+    height: 6rem;
+    width: 19rem;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: var(--light-orange);
+  }
+}
+
+.HeadphonesCategoryBody {
+  @media only screen and (max-width: $bp-500px) {
+    margin-top: 12rem;
+  }
+}
+.product {
+  display: flex;
+  height: min-content;
+  width: 100%;
+  margin-bottom: 16rem;
+  @media only screen and (max-width: $bp-500px) {
+    flex-direction: column;
+  }
+  &-margin-bottom {
+    margin-bottom: 25rem;
+    @media only screen and (max-width: $bp-500px) {
+      margin-bottom: 5rem;
+    }
+  }
+  &-image {
+    border-radius: 1rem;
+    width: 50%;
+    height: 100%;
+    @media only screen and (max-width: $bp-500px) {
+      width: 100%;
+      margin-bottom: 8rem;
+    }
+  }
+  &-textbox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-price {
+      font-size: 1.8rem;
+      margin: 3rem 0;
+    }
+    @media only screen and (max-width: $bp-500px) {
+      width: 100%;
+      order: 2;
+      padding: 0 !important;
+      align-items: center;
+      text-align: center;
+    }
+    &-left {
+      padding-left: 13rem;
+    }
+    &-right {
+      padding-right: 13rem;
+    }
+    &-secondaryheader {
+      font-size: 1.6rem;
+      opacity: 1;
+      letter-spacing: 1rem;
+      text-transform: uppercase;
+      color: var(--dark-orange);
+      @media only screen and (max-width: $bp-500px) {
+        font-size: 2.5rem;
+        letter-spacing: 2rem;
+      }
+    }
+    &-mainheader {
+      width: 30rem;
+      font-size: 4rem;
+      font-weight: 500;
+      margin-top: 3.5rem;
+      letter-spacing: 0.2rem;
+      margin-bottom: 4rem;
+      @media only screen and (max-width: $bp-500px) {
+        font-size: 6rem;
+        font-weight: 300;
+        width: 100%;
+        width: 40rem;
+      }
+    }
+    &-text {
+      font-size: 1.5rem;
+      opacity: 0.5;
+      letter-spacing: 0.1rem;
+      line-height: 2.5rem;
+      @media only screen and (max-width: $bp-500px) {
+        font-size: 2.7rem;
+
+        line-height: 4rem;
+        &-price {
+          font-size: 1.8rem;
+          margin: 3rem 0;
+        }
+      }
+    }
+  }
+}
+.main-button {
+  @media only screen and (max-width: $bp-500px) {
+    width: 25rem;
+    font-size: 1.8rem;
+    height: 7rem;
+  }
+}
+input:focus {
+  border: 1px solid var(--dark-orange);
+  outline: none;
+}
+input::placeholder {
+  opacity: 0.3;
+}
+
+.buttons-box {
+  display: flex;
+  .button-quan {
+    cursor: default;
+    width: 12rem;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: var(--gray) !important;
+      }
+    }
+  }
+  .button {
+    margin: 0 2rem 0 0;
+    &-minus {
+      transition: all 0.2s;
+      font-size: 1.6rem;
+      cursor: pointer;
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          color: var(--dark-orange);
+        }
+      }
+    }
+    &-plus {
+      transition: all 0.2s;
+      cursor: pointer;
+      font-size: 1.6rem;
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          color: var(--dark-orange);
+        }
+      }
+    }
+    &-number {
+      font-size: 1.6rem;
+      margin: 0 2rem;
+    }
+  }
+}
+
+.also-like-word {
+  text-align: center;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+
+/////////////////////////////MEDIA
+.navbar-cart {
+  @media only screen and (max-width: $bp-1440px) {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  @media only screen and (max-width: $bp-1200px) {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  @media only screen and (max-width: $bp-1024px) {
+    width: 2.9rem;
+    height: 2.9rem;
+  }
+  @media only screen and (max-width: $bp-950px) {
+    width: 3rem;
+    height: 2.8rem;
+  }
+  @media only screen and (max-width: $bp-768px) {
+    width: 3.3rem;
+    height: 3rem;
+  }
+  @media only screen and (max-width: $bp-650px) {
+    width: 4.7rem;
+    height: 4rem;
+    transform: scale(0.7);
+  }
+}
+
+.bodySectionOuter {
+  @media only screen and (max-width: $bp-950px) {
+    padding: 22rem 0 16rem 0;
+  }
+}
+.forHam {
+  @media only screen and (max-width: $bp-950px) {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+.zx9OrangeBoxContainer {
+  @media only screen and (max-width: $bp-650px) {
+    margin-top: 5rem;
+  }
+  .zx9OrangeBox {
+    @media only screen and (max-width: $bp-500px) {
+      gap: 0;
+      row-gap: 17rem;
+      flex-direction: column;
+      height: 117rem;
+      justify-content: center;
+      align-items: center;
+      &-button {
+        width: 25rem;
+        font-size: 1.8rem;
+        height: 7rem;
+      }
+    }
+    .circle-icon {
+      @media only screen and (max-width: $bp-500px) {
+        bottom: 35.5rem;
+        left: -18rem;
+        height: 99.5rem;
+        width: 99.5rem;
+        transform: scale(1.1);
+      }
+    }
+    &-speakerPhoto {
+      position: relative;
+      @media only screen and (max-width: $bp-950px) {
+        height: 40rem;
+      }
+      @media only screen and (max-width: $bp-768px) {
+        height: 37rem;
+      }
+
+      @media only screen and (max-width: $bp-500px) {
+        margin: 0;
+        padding: 0 4.5rem;
+      }
+    }
+    &-textbox {
+      @media only screen and (max-width: $bp-500px) {
+        margin-top: -8rem;
+        text-align: center;
+        align-items: center;
+        width: 60rem;
+        transform: translateY(-3rem);
+        &-maintext {
+          width: 50rem;
+          font-size: 8rem;
+        }
+        &-paragraph {
+          width: 50rem;
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+}
+.zx7speakerContainer {
+  @media only screen and (max-width: $bp-500px) {
+    .zx7Speaker {
+      padding-left: 5rem;
+      background-repeat: no-repeat;
+      background-size: 150%;
+      background-image: url("https://res.cloudinary.com/audiophile/image/upload/v1628032000/assets/product-zx7-speaker/mobile/image-gallery-3-_b1cdqw.jpg");
+      background-position: 0 50%;
+      height: 62.5rem;
+      &-text {
+        font-weight: 400;
+        font-size: 4.5rem;
+      }
+      &-button {
+        width: 25rem;
+        font-size: 2rem;
+        height: 6.5rem;
+      }
+    }
+  }
+}
+.navbar-navList {
+  @media only screen and (max-width: $bp-950px) {
+    display: none;
+  }
+}
+
+.navvham {
+  width: 3rem;
+  height: 4rem;
+  cursor: pointer;
+  margin-right: 4rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.navbar-hamList {
+  cursor: pointer;
+  display: none;
+  width: 3rem;
+  height: 2px;
+  background-color: white;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: -1rem;
+    left: 0;
+    background-color: inherit;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 1rem;
+    left: 0;
+    background-color: inherit;
+  }
+  @media only screen and (max-width: $bp-950px) {
+    display: block;
+  }
+}
+.navHamListOuter {
+  @media only screen and (max-width: $bp-950px) {
+    display: block;
+  }
+}
+.gallery-photo-third {
+  @media only screen and (max-width: $bp-950px) {
+    width: 100%;
+    height: 100%;
+  }
+}
+.checkout-box-1-subtitle {
+  @media only screen and (max-width: $bp-500px) {
+    font-size: 2rem;
+  }
+}
+.checkout-box {
+  @media only screen and (max-width: $bp-950px) {
+    flex-direction: column;
+    width: 100%;
+  }
+  &-1 {
+    @media only screen and (max-width: $bp-950px) {
+      width: 100%;
+      height: 100%;
+    }
+    &-form1 {
+      width: 100%;
+      @media only screen and (max-width: $bp-500px) {
+        &-label {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+      }
+      &-input {
+        @media only screen and (max-width: $bp-950px) {
+          // width: 41.5rem;
+          width: 100%;
+        }
+        @media only screen and (max-width: $bp-500px) {
+          width: 100%;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  &-2 {
+    @media only screen and (max-width: $bp-950px) {
+      width: 100%;
+      height: 100%;
+      margin-top: 5rem;
+    }
+  }
+}
+
+.formbox {
+  @media only screen and (max-width: $bp-1024px) {
+    width: 49%;
+  }
+  @media only screen and (max-width: $bp-950px) {
+    width: 49%;
+    height: 100%;
+  }
+  @media only screen and (max-width: $bp-500px) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+.formboxAddress {
+  @media only screen and (max-width: $bp-950px) {
+    width: 100%;
+    height: 100%;
+  }
+}
+.radio-div-form-box {
+  @media only screen and (max-width: $bp-950px) {
+    margin-left: 0.7rem;
+  }
+  @media only screen and (max-width: $bp-768px) {
+    margin-left: 2.6rem;
+  }
+}
+.radio-div-form-checkmark {
+  @media only screen and (max-width: $bp-950px) {
+    width: 41.6rem;
+  }
+  @media only screen and (max-width: $bp-768px) {
+    width: 39rem;
+  }
+  @media only screen and (max-width: $bp-500px) {
+    width: 100%;
+    font-size: 2rem;
+    p {
+      transform: translateY(-0.5rem);
+    }
+  }
+}
+.also-like-word {
+  @media only screen and (max-width: $bp-950px) {
+    font-weight: 500;
+  }
+}
+.bodySectionOuter {
+  @media only screen and (max-width: $bp-650px) {
+    padding-bottom: 25rem;
+  }
+}
+.sharedProducts {
+  @media only screen and (max-width: $bp-500px) {
+    flex-direction: column;
+    gap: 10rem;
+    .mb-4 {
+      margin-bottom: 4rem;
+    }
+    &-text {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+  &-headphones,
+  &-speakers,
+  &-earphones {
+    @media only screen and (max-width: $bp-500px) {
+      width: 100%;
+      height: 32.5rem;
+
+      .shop-div {
+        p {
+          font-size: 2.2rem;
+        }
+        .arrow-icon {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  &-image {
+    @media only screen and (max-width: $bp-500px) {
+      margin-top: -10rem;
+      margin-bottom: 0rem;
+      transform: scale(1.2);
+    }
+  }
+}
+.bodySectionOuter {
+  @media only screen and (max-width: $bp-500px) {
+    height: min-content;
+    padding-top: 15rem;
+    padding-bottom: 18rem;
+  }
+}
+.yx1Earphonesbox {
+  @media only screen and (max-width: $bp-500px) {
+    flex-direction: column;
+    height: min-content;
+    column-gap: 0;
+
+    &-image {
+      width: 100%;
+      height: 39.5rem;
+      margin-bottom: 5rem;
+    }
+    &-text {
+      margin-bottom: 16rem;
+      width: 100%;
+      height: 39.5rem;
+      padding-left: 5rem;
+      &-name {
+        font-weight: 400;
+        font-size: 5rem;
+      }
+    }
+  }
+  .zx7Speaker-button {
+    width: 25rem;
+    height: 7rem;
+    font-size: 2rem;
+  }
+}
+.yx1EarphonesContainer {
+  @media only screen and (max-width: $bp-500px) {
+    margin-bottom: 0;
+  }
+}
+.homeBottomBox {
+  @media only screen and (max-width: $bp-500px) {
+    flex-direction: column;
+    height: min-content;
+    &-image {
+      order: -1;
+      width: 100%;
+      height: 59rem;
+      margin-bottom: 5rem;
+    }
+    &-text {
+      width: 100%;
+      padding-right: 0;
+      text-align: center;
+      &-header {
+        padding: 0 10rem;
+      }
+      &-paragraph {
+        font-size: 2.5rem;
+        line-height: 3.4rem;
+      }
+    }
+  }
+}
+.homeBottomOuter {
+  @media only screen and (max-width: $bp-500px) {
+    margin-top: 0;
+    margin-bottom: 12rem;
+  }
+}
+.footer {
+  @media only screen and (max-width: $bp-500px) {
+    height: min-content;
+    padding-bottom: 0;
+  }
+}
+.navhamlist {
+  @media only screen and (max-width: $bp-500px) {
+    &-box {
+      margin-top: 25rem;
+    }
+  }
+}
+
+.productDetails-box {
+  @media only screen and (max-width: $bp-500px) {
+    flex-direction: column;
+    .product {
+      &-textbox {
+        align-items: flex-start;
+        text-align: left;
+        &-price {
+          font-size: 3rem;
+          margin: 5rem 0;
+        }
+        .buttons-box {
+          .button-quan {
+            height: 7rem;
+          }
+          .button-minus,
+          .button-number,
+          .button-plus {
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+.backButton {
+  @media only screen and (max-width: $bp-500px) {
+    font-size: 2.7rem !important;
+  }
+}
+.featuresBox {
+  @media only screen and (max-width: $bp-500px) {
+    flex-direction: column;
+
+    &-features {
+      width: 100%;
+      margin-bottom: 16rem;
+      &-word {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+      &-text1 {
+        font-size: 3rem;
+        line-height: 3.8rem;
+      }
+    }
+    &-inTheBox {
+      padding: 0;
+      &-word {
+        font-size: 4rem;
+      }
+      &-quan,
+      &-item {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.gallery {
+  @media only screen and (max-width: $bp-500px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16rem;
+    height: min-content;
+    &-photo {
+      &-first {
+        position: relative;
+        grid-row: 1/2;
+        width: 100%;
+        height: 28rem;
+      }
+
+      &-second {
+        position: relative;
+        grid-row: 2/3;
+        width: 100%;
+        height: 28rem;
+      }
+
+      &-third {
+        position: relative;
+        grid-row: 3/4;
+        width: 100%;
+        height: 40.1rem;
+        background-size: cover;
+      }
+    }
+  }
+}
+.alsoLike-container {
+  @media only screen and (max-width: $bp-500px) {
+    flex-direction: column;
+    align-items: center;
+    .alsolike-box {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+    &-box {
+      position: relative;
+      height: 25rem;
+
+      background-color: var(--gray);
+      img {
+        transform: scale(1.4);
+      }
+      &-title {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+.checkout-box-2-summary {
+  @media only screen and (max-width: $bp-500px) {
+    &-quantity {
+      font-size: 2.5rem;
+    }
+    &-grandtotal {
+      &-title {
+        font-size: 2.5rem;
+      }
+      &-price {
+        font-size: 2.5rem;
+      }
+    }
+    &-total {
+      &-title {
+        font-size: 2.5rem;
+      }
+      &-price {
+        font-size: 2.5rem;
+      }
+    }
+    &-image {
+      width: 12rem;
+      height: 12rem;
+    }
+    &-detailsbox {
+      &-name {
+        font-size: 3rem;
+      }
+      &-price {
+        font-size: 2rem;
+      }
+    }
+    .buttons-box {
+      width: 20rem !important;
+      .button {
+        width: 100%;
+      }
+      .button-quan {
+        // width: 30rem;
+        margin: 0;
+        height: 7rem;
+        .button-minus,
+        .button-number,
+        .button-plus {
+          font-size: 2.5rem;
+        }
+        .button-number {
+          margin: 0 4rem;
+        }
+      }
+    }
+  }
+}
+.checkout-box-2 {
+  @media only screen and (max-width: $bp-500px) {
+    &-title {
+      font-size: 3rem;
+    }
+    .checkout-button {
+      font-size: 2.5rem;
+      height: 7rem;
+    }
+  }
+}

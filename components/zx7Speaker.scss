@@ -1,0 +1,39 @@
+.zx7speakerContainer {
+  display: flex;
+  justify-content: center;
+  height: min-content;
+  margin-bottom: 5rem;
+}
+.zx7Speaker {
+  height: 32rem;
+  width: 100%;
+  background-image: url("https://res.cloudinary.com/audiophile/image/upload/v1627483711/assets/home/desktop/image-speaker-zx7_umdmpw.jpg");
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10rem;
+
+  &-text {
+    font-size: 3rem;
+    color: var(--black);
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  &-button {
+    background-color: transparent;
+    outline: 1px solid var(--light-black);
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: var(--black) !important;
+        color: white;
+        outline: none;
+      }
+    }
+  }
+  .button {
+    margin-top: 4rem;
+  }
+}

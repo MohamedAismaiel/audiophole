@@ -1,0 +1,47 @@
+.homeBottomOuter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16rem;
+  margin-top: 16rem;
+}
+.homeBottomBox {
+  display: flex;
+  height: 55.8rem;
+  column-gap: 2.7rem;
+
+  &-text {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 10.5rem;
+    &-header {
+      text-transform: uppercase;
+      font-size: 4rem;
+      font-weight: 300;
+      letter-spacing: 1.5px;
+      span {
+        color: var(--dark-orange);
+      }
+      margin-bottom: 4rem;
+    }
+    &-paragraph {
+      font-size: 1.5rem;
+      color: var(--black);
+      opacity: 0.5;
+      letter-spacing: 0.6px;
+      font-weight: 300;
+      line-height: 2.5rem;
+    }
+  }
+  &-image {
+    border-radius: 1rem;
+    // background-image: url(../assets/shared/desktop/image-best-gear.jpg);
+    width: 50%;
+    height: 100%;
+    // background-position: top;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    position: relative;
+  }
+}

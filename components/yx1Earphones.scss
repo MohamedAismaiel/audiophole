@@ -1,0 +1,36 @@
+.yx1EarphonesContainer {
+  display: flex;
+  justify-content: center;
+  height: min-content;
+  margin-bottom: 16rem;
+}
+.yx1Earphonesbox {
+  height: 32rem;
+  display: flex;
+  column-gap: 3rem;
+  &-image {
+    border-radius: 1rem;
+    // background-image: url("../assets/home/desktop/image-earphones-yx1.jpg");
+    height: 100%;
+    width: 50%;
+    // background-size: cover;
+    // background-position: center;
+    position: relative;
+  }
+  &-text {
+    border-radius: 1rem;
+    width: 50%;
+    height: 100%;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10rem;
+    &-name {
+      font-size: 3rem;
+      color: var(--black);
+      letter-spacing: 2px;
+      font-weight: 300;
+    }
+  }
+}
