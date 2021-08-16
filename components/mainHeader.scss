@@ -110,25 +110,33 @@
     // transform: translateX(-2rem);
   }
   @media only screen and (max-width: 768px) {
-    width: 116rem;
-    height: 116rem;
-    top: -25rem;
+    width: 106rem;
+    height: 106rem;
+    top: -22rem;
+
     transform: translateX(-2rem);
   }
   @media only screen and (max-width: 650px) {
-    width: 135rem;
-    height: 135rem;
-    top: -25rem;
-    transform: translateX(-1rem);
+    width: 92rem;
+    height: 92rem;
+    top: -8rem;
+
+    transform: translateX(-0.5rem);
+    img {
+      transform: scale(1.4);
+    }
   }
   @media only screen and (max-width: 500px) {
     opacity: 0.5;
     position: absolute;
-    width: 100rem;
-    height: 100rem;
-    top: -12rem;
+    width: 70rem;
+    height: 70rem;
+    top: 12rem;
     // left: 1rem;
     transform: translateX(-0.5rem);
+    img {
+      transform: scale(1.4);
+    }
   }
 }
 .hero-image {
