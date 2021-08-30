@@ -50,6 +50,7 @@ const CategoryProduct = (props) => {
                 >
                   <div className="product-image">
                     <Image
+                      priority
                       src={item.image}
                       width={1080}
                       height={1120}

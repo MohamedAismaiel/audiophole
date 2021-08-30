@@ -73,6 +73,7 @@ const ProductDetails = (props) => {
           <div className="productDetails-box  ">
             <div className="product-image">
               <Image
+                priority
                 src={data.image}
                 width={640}
                 height={660}
