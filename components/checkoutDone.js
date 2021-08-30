@@ -7,11 +7,13 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 const DoneOverlay = (props) => {
   const router = useRouter();
   const clearCart = useContext(CartContext).removeAll;
-  const itemctx = useContext(CartContext).items;
+  const itemctx = JSON.parse(localStorage.getItem("doneItems"));
+  // const itemctx = useContext(CartContext).items;
   const [showMore, setShowMore] = useState(false);
   const homeHandler = () => {
     router.push("/");
-    clearCart();
+    localStorage.removeItem("doneItems");
+    localStorage.removeItem("donePrice");
   };
   let otherItems = [...itemctx];
   otherItems.shift();
@@ -21,7 +23,8 @@ const DoneOverlay = (props) => {
   const showlessHandler = () => {
     setShowMore(false);
   };
-  const totalPricectx = useContext(CartContext).totalPrice;
+  // const totalPricectx = useContext(CartContext).totalPrice;
+  const totalPricectx = JSON.parse(localStorage.getItem("donePrice"));
   const vatPrice = totalPricectx * 0.2;
   const grandTotal = vatPrice + totalPricectx + 50;
   return (

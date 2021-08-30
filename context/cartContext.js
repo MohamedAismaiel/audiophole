@@ -31,6 +31,10 @@ const cartReducer = (state, action) => {
     }
     localStorage.setItem("items", JSON.stringify(updatedItems));
     localStorage.setItem("price", JSON.stringify(updatedTotalPrice));
+
+    localStorage.setItem("doneItems", JSON.stringify(updatedItems));
+    localStorage.setItem("donePrice", JSON.stringify(updatedTotalPrice));
+
     return { totalPrice: updatedTotalPrice, items: updatedItems };
   }
   if (action.type === "REMOVE_ITEM") {
@@ -51,9 +55,14 @@ const cartReducer = (state, action) => {
     }
     localStorage.setItem("items", JSON.stringify(updatedItems));
     localStorage.setItem("price", JSON.stringify(Math.abs(updatedTotalAmount)));
+    localStorage.setItem("doneItems", JSON.stringify(updatedItems));
+    localStorage.setItem("donePrice", JSON.stringify(updatedTotalAmount));
+
     if (JSON.parse(localStorage.getItem("items")).length === 0) {
       localStorage.removeItem("items");
       localStorage.removeItem("price");
+      localStorage.removeItem("doneItems");
+      localStorage.removeItem("donePrice");
     }
     return { items: updatedItems, totalPrice: Math.abs(updatedTotalAmount) };
   }

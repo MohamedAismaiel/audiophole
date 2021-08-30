@@ -79,8 +79,8 @@ const CheckoutContent = () => {
     }
     showDoneHandler();
     clearCart();
-    localStorage.removeItem("items");
-    localStorage.removeItem("price");
+    // localStorage.removeItem("items");
+    // localStorage.removeItem("price");
   };
   const vatPrice = totalPricectx * 0.2;
   let grandTotal = 0;
