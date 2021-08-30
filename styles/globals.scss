@@ -217,7 +217,7 @@ img {
       letter-spacing: 0.1rem;
       line-height: 2.5rem;
       @media only screen and (max-width: $bp-500px) {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
 
         line-height: 4rem;
         &-price {
@@ -729,7 +729,7 @@ input::placeholder {
         margin-bottom: 2rem;
       }
       &-text1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 3.8rem;
       }
     }
