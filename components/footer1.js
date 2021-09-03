@@ -1,5 +1,12 @@
 import Link from "next/link";
 const Footer1 = () => {
+  const linkedInhandler = () => {
+    const win = window.open(
+      "https://www.linkedin.com/in/mohamed-ali-7a5017103/",
+      "_blank"
+    );
+    win.focus();
+  };
   return (
     <footer className="footer">
       <div className="container">
@@ -34,14 +41,9 @@ const Footer1 = () => {
           </p>
           <p className="footerBox500PX-copyright">
             <span>&copy; Copyright 2021. All Coding Rights Reserved To</span>
-            <a
-              className="link"
-              href="https:www.linkedin.com/in/mohamed-ali-7a5017103/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <span onClick={linkedInhandler} className="link">
               &nbsp; Mohamed A.Ismaiel
-            </a>
+            </span>
           </p>
           <div className="footerBox500PX-social">
             <a
