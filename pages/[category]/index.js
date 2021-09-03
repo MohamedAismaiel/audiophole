@@ -1,7 +1,23 @@
+import { Fragment } from "react";
+import Head from "next/head";
 import CategoryProduct from "../../components/categoryProduct";
-
+import { useRouter } from "next/router";
 const Category = (props) => {
-  return <CategoryProduct data={props.dataa} />;
+  const router = useRouter();
+  const categoryName = router.query.category;
+
+  return (
+    <Fragment>
+      <Head>
+        <title>{`Audiophile | ${categoryName}`}</title>
+        <meta
+          name="description"
+          content="Experience the high quality sound with audiophile products"
+        />
+      </Head>
+      <CategoryProduct data={props.dataa} />;
+    </Fragment>
+  );
 };
 export default Category;
 

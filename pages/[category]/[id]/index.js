@@ -1,7 +1,24 @@
+import Head from "next/head";
+import { useRouter } from "next/router";
+import { Fragment } from "react";
 import ProductDetails from "../../../components/productDetails";
 
 const X = (props) => {
-  return <ProductDetails data={props.dataa} />;
+  const router = useRouter();
+  const categoryName = router.query.id;
+
+  return (
+    <Fragment>
+      <Head>
+        <title>{`Audiophile | ${categoryName}`}</title>
+        <meta
+          name="description"
+          content="Experience the high quality sound with audiophile products"
+        />
+      </Head>
+      <ProductDetails data={props.dataa} />;
+    </Fragment>
+  );
 };
 export default X;
 
