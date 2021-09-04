@@ -43,9 +43,11 @@ const CartOverlay = (props) => {
           <div className="cart-box">
             <div className="cart-box-titlebox">
               <h2 className="cart-box-titlebox-title">cart ({cartQuantity})</h2>
-              <h3 onClick={removeAll} className="cart-box-titlebox-button ">
-                Remove all
-              </h3>
+              {itemctx.length !== 0 && (
+                <h3 onClick={removeAll} className="cart-box-titlebox-button ">
+                  Remove all
+                </h3>
+              )}
             </div>
             {itemctx.map((item) => {
               return (
