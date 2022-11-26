@@ -86,10 +86,10 @@
     }
   }
   &-image {
-    background-position: center;
-    background-size: cover;
-    width: 95rem;
-    height: 95rem;
+    // background-position: center;
+    // background-size: cover;
+    // width: 95rem;
+    // height: 95rem;
     // opacity: 0.5;
     // background-image: url("../assets/home/desktop/Untitled-1.png-1.jpg");
   }
@@ -129,10 +129,10 @@
   @media only screen and (max-width: 500px) {
     opacity: 0.5;
     position: absolute;
-    width: 70rem;
-    height: 70rem;
+    width: 50rem;
+    height: 50rem;
     top: 12rem;
-    // left: 1rem;
+
     transform: translateX(-0.5rem);
     img {
       transform: scale(1.4);
