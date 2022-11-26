@@ -103,7 +103,7 @@ img {
     width: 90rem;
   }
   @media only screen and (max-width: $bp-500px) {
-    width: 63.9rem;
+    width: 100vw;
   }
 }
 .navbar {
@@ -676,8 +676,8 @@ input::placeholder {
 }
 .footer {
   @media only screen and (max-width: $bp-500px) {
-    height: min-content;
-    padding-bottom: 0;
+    height: max-content;
+    padding-bottom: 20rem;
   }
 }
 .navhamlist {

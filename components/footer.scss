@@ -1,7 +1,7 @@
 .footer {
   // margin-top: 16rem;
   width: 100vw;
-  height: min-content;
+  height: max-content;
   background-color: var(--light-black);
   color: var(--white);
   display: flex;
@@ -145,7 +145,6 @@
     font-size: 2.5rem;
     color: var(--white);
     opacity: 0.5;
-    margin-bottom: 8rem;
     line-height: 4rem;
     margin-top: 4rem;
     letter-spacing: 1px;
