@@ -732,6 +732,7 @@ input::placeholder {
 .backButton {
   @media only screen and (max-width: $bp-500px) {
     font-size: 2.7rem !important;
+    padding: 0 1rem;
   }
 }
 .featuresBox {
